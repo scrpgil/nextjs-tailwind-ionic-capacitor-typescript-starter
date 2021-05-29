@@ -1,6 +1,6 @@
 {
   "appId": "com.example.app",
-  "appName": "nextjs-tailwind-capacitor",
+  "appName": "nextjs-tailwind-capacitor-typescript",
   "bundledWebRuntime": false,
   "npmClient": "npm",
   "webDir": "out",
