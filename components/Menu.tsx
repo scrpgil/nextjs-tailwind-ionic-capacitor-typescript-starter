@@ -1,4 +1,4 @@
-import { Plugins, StatusBarStyle } from '@capacitor/core';
+import { StatusBar, Style } from '@capacitor/status-bar';
 import {
   IonContent,
   IonHeader,
@@ -35,8 +35,6 @@ const pages = [
 ];
 
 const Menu = () => {
-  const { StatusBar } = Plugins;
-
   const ionRouterContext = useContext(IonRouterContext);
   const location = useLocation();
 
@@ -45,14 +43,14 @@ const Menu = () => {
   const handleOpen = async () => {
     try {
       await StatusBar.setStyle({
-        style: isDark ? StatusBarStyle.Light : StatusBarStyle.Dark,
+        style: isDark ? Style.Light : Style.Dark,
       });
     } catch {}
   };
   const handleClose = async () => {
     try {
       await StatusBar.setStyle({
-        style: isDark ? StatusBarStyle.Dark : StatusBarStyle.Light,
+        style: isDark ? Style.Dark : Style.Light,
       });
     } catch {}
   };
