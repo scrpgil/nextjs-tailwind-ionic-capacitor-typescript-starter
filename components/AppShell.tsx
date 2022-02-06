@@ -6,6 +6,10 @@ import Menu from './Menu';
 
 import Tabs from './pages/Tabs';
 
+import { setupIonicReact } from '@ionic/react';
+
+setupIonicReact();
+
 const AppShell = () => {
   return (
     <IonApp>
